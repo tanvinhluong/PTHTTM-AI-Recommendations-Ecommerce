@@ -1,0 +1,6 @@
+flask
+pandas
+sqlalchemy
+scikit-learn
+pymysql
+flask_sqlalchemy

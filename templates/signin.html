@@ -1,0 +1,18 @@
+<!-- Hiển thị thông báo lỗi nếu có lỗi đăng nhập -->
+{% if error %}
+<div class="alert alert-danger" role="alert">
+    {{ error }}
+</div>
+{% endif %}
+
+<form method="POST" action="/signin">
+    <div class="form-group">
+        <label for="signinUsername">Tên người dùng</label>
+        <input type="text" class="form-control" id="signinUsername" name="signinUsername" required>
+    </div>
+    <div class="form-group">
+        <label for="signinPassword">Mật khẩu</label>
+        <input type="password" class="form-control" id="signinPassword" name="signinPassword" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Đăng nhập</button>
+</form>
